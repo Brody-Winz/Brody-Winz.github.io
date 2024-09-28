@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brody Winston</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img id="custom-cursor" src="cursor.png" alt="Custom Cursor">
+    
+    <div id="hover-instructions">Hover and click on the planets to see more information! <br>Click the black hole to view the one-page normal resume</div>
+    
+    <div id="fade-overlay"></div> 
+    <div id="planets-section">
+        <div id="rocket"></div> 
+        <div id="contact-text" class="orbit-text">Contact</div> 
+        
+        <div id="sun" class="planets"></div>
+        <div id="experience-text" class="orbit-text">Experience</div> 
+
+        <div id="earth" class="planets"></div>
+        <div id="skills-text" class="orbit-text">Skills</div> 
+
+        <div id="jupiter" class="planets"></div>
+        <div id="education-text" class="orbit-text">Education</div> 
+
+        <div id="mars" class="planets"></div>
+        <div id="awards-text" class="orbit-text">Awards</div> 
+    </div>
+    
+    <div id="blackhole"></div> 
+
+    <div id="rocket-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('rocket-modal')">&times;</span>
+            <h2>Contact Information</h2>
+            <p>Brody Winston</p>
+            <p>Marietta, GA</p>
+            <p>(770) 695-6101</p>
+            <p>BrodymWinston@gmail.com</p>
+        </div>
+    </div>
+
+    <div id="skills-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('skills-modal')">&times;</span>
+            <h2>Skills</h2>
+            <ul>
+                <li>Advanced: HTML, CSS, Java, Spanish</li>
+                <li>Intermediate: JavaScript, Python</li>
+                <li>Adaptability from living in multiple countries (Thailand, Indonesia, Japan, and US)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="experience-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('experience-modal')">&times;</span>
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Coding Tutor (Aug 2023 - Present)</strong>
+                    <br>Tutor 4 kids in coding (Python, Java/JavaScript) with weekly lessons.</li>
+                <li><strong>Welcome Team Member, St. Ann's Church (May 2021 - Jul 2024)</strong>
+                    <br>Assisted with guest reception and event planning at church.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="education-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('education-modal')">&times;</span>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Pope High School, Marietta, GA (2021 - Present)</strong></li>
+                <li>GPA: 4.5 (weighted), 3.9 (unweighted)</li>
+                <li>11 AP classes, 13 Honors classes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="awards-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('awards-modal')">&times;</span>
+            <h2>Awards</h2>
+            <ul>
+                <li><strong>National Merit Commended Scholar (Sep 2024)</strong></li>
+                <li><strong>AP Scholar with Distinction (Jul 2024)</strong></li>
+                <li><strong>Delegate, Congress of Future Medical Leaders by Harvard (Jan 2024)</strong></li>
+                <li><strong>Georgia Certificate of Merit (Jan 2024)</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="resume-normal">
+        <span id="resume-close" class="close">&times;</span>
+        <div id="resume-panel">
+            <h1>Brody Winston</h1>
+            <p>Marietta, GA</p>
+            <p>(770) 695-6101</p>
+            <p>BrodymWinston@gmail.com</p>
+            <h2>Skills</h2>
+            <ul>
+                <li>Advanced: HTML, CSS, Java, Spanish</li>
+                <li>Intermediate: JavaScript, Python</li>
+                <li>Adaptability from living in multiple countries (Thailand, Indonesia, Japan, and US)</li>
+            </ul>
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Coding Tutor (Aug 2023 - Present)</strong>
+                    <br>Tutor for Python and JavaScript basics.</li>
+                <li><strong>Welcome Team Member, St. Ann's Church (May 2021 - Jul 2024)</strong>
+                    <br>Helped with guest reception and events.</li>
+            </ul>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Pope High School, Marietta, GA (2021 - Present)</strong></li>
+                <li>GPA: 4.5 (weighted), 3.9 (unweighted)</li>
+                <li>11 AP classes, 13 Honors classes</li>
+            </ul>
+            <h2>Awards</h2>
+            <ul>
+                <li><strong>National Merit Commended Scholar (Sep 2024)</strong></li>
+                <li><strong>AP Scholar with Distinction (Jul 2024)</strong></li>
+                <li><strong>Delegate, Congress of Future Medical Leaders (Jan 2024)</strong></li>
+                <li><strong>Georgia Certificate of Merit (Jan 2024)</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="resume-animations.js"></script>
+</body>
+</html>
